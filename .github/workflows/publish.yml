@@ -1,0 +1,26 @@
+name: Publish Website
+
+on:
+  push:
+    branches: [website]          # 👈 activa la acción solo al hacer push en esta rama
+
+permissions:
+  contents: write
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render & Publish
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: website          # 👈 rama destino para GitHub Pages
+          path: .
+          render: true

@@ -3,13 +3,17 @@ project:
 
 website:
   title: "Mis Cursos de Pregrado"
+  repo-url: "https://github.com/bcubides-est/website.git"
+  repo-branch: website
+  favicon: logo.png
+    url: "/website/"
+  page-navigation: true        # prev/next
   navbar:
     left:
       - href: index.qmd
         text: Inicio
       - href: Perfil.qmd
         text: Perfil 
-  favicon: "logo.png"
 
 format:
   html:
