@@ -4,9 +4,7 @@ project:
 website:
   title: "Mis Cursos de Pregrado"
   repo-url: "https://github.com/bcubides-est/website.git"
-  repo-branch: website
   favicon: logo.png
-    url: "/website/"
   page-navigation: true        # prev/next
   navbar:
     left:
@@ -17,7 +15,6 @@ website:
 
 format:
   html:
-    theme:
-      - cosmo
+    theme: cosmo
     toc: false
-    favicon: "logo.png"
+    favicon: logo.png
