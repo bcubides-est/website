@@ -1,0 +1,63 @@
+/* styles.css – estilos extra para index.qmd */
+
+/* --- Hero reducido --- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem 1rem;
+  background: transparent;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero-logo {
+  width: 60px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.hero h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.hero h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #6c757d;
+  margin: 0;
+}
+
+/* --- Lista limpia --- */
+h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+ol {
+  padding-left: 1.25rem;
+}
+
+li {
+  margin: .25rem 0;
+}
+
+/* --- Footer --- */
+.footer {
+  text-align: left;
+  margin: 2rem 0 1rem;
+  font-size: .9rem;
+  color: #6c757d;
+}
+
+.footer a {
+  color: #0d6efd;
+  margin-right: .5rem;
+}
