@@ -11,7 +11,7 @@ logo: logo.png
 
 ## 📚 Cursos de Pregrado
 
-1. [Actuarial](https://bcubides-est.github.io/actuarial/)
+1. [ENLACE](https://bcubides-est.github.io/book_asignaturas/)
 2. …
 
 ---
