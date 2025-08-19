@@ -11,8 +11,8 @@ logo: logo.png
 
 ## 📚 Cursos de Pregrado
 
-1. [ENLACE](https://bcubides-est.github.io/book_asignaturas/)
-2. …
+1. [ACTUARIAL](https://bcubides-est.github.io/Actuarial/)
+2. [SERIES DE TIEMPO](https://bcubides-est.github.io/Series_de_tiempo/)
 
 ---
 
