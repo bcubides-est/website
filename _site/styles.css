@@ -1,18 +1,129 @@
-/* Fondo y padding del sidebar */
-.quarto-sidebar {
-  background: #f8f9fa;
-  padding: 1rem;
-  border-right: 1px solid #ddd;
+/* ============================================== */
+/* === ESTILOS GENERALES PARA LA VISTA WEB ==== */
+/* ============================================== */
+
+/* Estos son los estilos que ya tenías para la web, no cambian */
+.profile-container {
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+}
+.main-column h2 {
+    border-bottom: 2px solid #0077B5;
+    padding-bottom: 5px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.main-column h4 {
+    color: #005A9C;
 }
 
-/* Enlaces */
-.quarto-sidebar a {
-  margin: 0.5rem 0;
-  font-weight: 600;
+/* ================================================ */
+/* === ESTILOS PARA LA IMPRESIÓN (GENERAR PDF) ==== */
+/* ================================================ */
+
+/* Definimos los márgenes de la página del PDF */
+@page {
+  /* ¡Puedes ajustar estos valores a tu gusto! */
+  margin: 1.5cm;
 }
 
-/* Hover */
-.quarto-sidebar a:hover {
-  background: rgba(0,0,0,0.05);
-  border-radius: 4px;
+/* Reglas que se aplican Únicamente al imprimir */
+@media print {
+
+  /* 1. Ocultar elementos no deseados en el PDF */
+  .navbar,                     /* Oculta la barra de navegación */
+  .page-footer,                /* Oculta el pie de página (si hubiera) */
+  .quarto-title-block {        /* ¡IMPORTANTE! Oculta el título "Perfil Profesional" que causaba la página en blanco */
+    display: none !important;
+  }
+  
+  /* 2. El cuerpo del PDF no debe tener márgenes ni padding propios */
+  body {
+    background-color: white !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* 3. Asegurar que el contenedor principal ocupe todo el espacio disponible dentro de los márgenes de @page */
+  .profile-container {
+    max-width: 130% !important;
+    width: 130% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
+  /* 4. Mostrar el nuevo título que crearemos, que está oculto por defecto */
+  .print-only {
+      display: block !important;
+  }
+
+  /* 5. Estilos de texto para asegurar buena legibilidad y quitar colores en el PDF */
+  a {
+    color: black !important;
+    text-decoration: none !important;
+  }
+   h1, h2, h3, h4, p, li {
+    color: #000 !important;
+  }
+   .main-column h2 {
+     border-bottom: none !important;
+     padding-bottom: 0;
+     margin-top: 20px;
+     margin-bottom: 10px;
+   }
+   
+  /* 6. Evitar que el contenido se corte de forma extraña entre páginas */
+  h2, h3, h4 {
+    page-break-after: avoid;
+  }
+  div, ul, li, p {
+    page-break-inside: avoid;
+  }
+}
+
+/* === CLASE ESPECIAL PARA ELEMENTOS DE SÓLO IMPRESIÓN === */
+
+/* Ocultar en la vista web normal el título que solo queremos en el PDF */
+.print-only {
+    display: none;
+}
+
+/* ============================================================ */
+/* ===   ESTILOS ESPECÍFICOS PARA INICIO (inicio.qmd)  === */
+/* ============================================================ */
+.hero-section {
+  padding: 40px 20px;
+  border-bottom: 1px solid var(--bs-border-color);
+  margin-bottom: 30px;
+  background-color: var(--bs-tertiary-bg);
+  border-radius: 10px;
+}
+.hero-section h1 {
+  font-size: 2.5rem; margin-top: 20px; color: var(--bs-primary);
+}
+.course-card-link { text-decoration: none; }
+.course-card .card-body {
+  display: flex; flex-direction: column; justify-content: center;
+  align-items: center; padding: 2rem 1rem;
+}
+.course-card {
+  transition: all 0.2s ease-in-out; border: 1px solid var(--bs-border-color-translucent);
+}
+.course-card:hover {
+  transform: translateY(-5px); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-color: var(--bs-primary);
+}
+html[data-bs-theme="dark"] .course-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+.card-icon { font-size: 3.5rem; color: var(--bs-primary); margin-bottom: 1rem; }
+.course-card .card-title { color: var(--bs-heading-color); font-weight: 700; margin-top: 0.5rem; }
+.footer {
+  text-align: center; margin-top: 40px; padding-top: 20px;
+  border-top: 1px solid var(--bs-border-color); font-size: 0.9em;
+  color: var(--bs-secondary-color);
 }

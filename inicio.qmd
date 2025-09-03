@@ -1,0 +1,56 @@
+---
+#title: "Portal de Cursos"
+---
+
+::: {.hero-section .text-center}
+![](./logo.png){width="160"}
+
+# Portal de Cursos
+
+Bienvenido a mi espacio académico. Aquí encontrarás los recursos y materiales de algunos cursos de pregrado en Estadística.
+:::
+
+## 📚 Cursos de Pregrado
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+::: {.card .course-card .h-100}
+<div class="card-body">
+<div class="card-icon"><i class="fa-solid fa-chart-line" role="img" aria-label="Chart line icon"></i></div>
+<h5 class="card-title">Regresión</h5>
+<!-- Este enlace hace que toda la tarjeta sea clicleable -->
+<a href="https://bcubides-est.github.io/Regresion/" class="stretched-link"></a>
+</div>
+:::
+:::
+
+::: {.g-col-12 .g-col-md-4}
+::: {.card .course-card .h-100}
+<div class="card-body">
+<div class="card-icon"><i class="fa-solid fa-shield-halved" role="img" aria-label="Shield icon"></i></div>
+<h5 class="card-title">Cálculo Actuarial</h5>
+<a href="https://bcubides-est.github.io/Actuarial/" class="stretched-link"></a>
+</div>
+:::
+:::
+
+::: {.g-col-12 .g-col-md-4}
+::: {.card .course-card .h-100}
+<div class="card-body">
+<div class="card-icon"><i class="fa-solid fa-wave-square" role="img" aria-label="Wave square icon"></i></div>
+<h5 class="card-title">Series de Tiempo</h5>
+<a href="https://bcubides-est.github.io/Series_de_tiempo/" class="stretched-link"></a>
+</div>
+:::
+:::
+
+:::
+
+<br>
+<hr>
+
+::: {.footer}
+¿Dudas o sugerencias?<br>
+[E-mail](mailto:bcubides@unal.edu.co) · [GitHub](https://github.com/bcubides-est)
+:::

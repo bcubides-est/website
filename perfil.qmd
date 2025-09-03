@@ -1,0 +1,175 @@
+---
+format:
+  html:
+    page-layout: full
+    css: styles.css # Opcional: Para personalización avanzada
+---
+
+<style>
+/* Pequeños ajustes para mejorar la presentación */
+body {
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+.main-column h1 {
+  border-bottom: 2px solid #0077B5; /* Un azul similar al de LinkedIn */
+  padding-bottom: 5px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+/* === LÍNEA AÑADIDA PARA LOS TÍTULOS DE EXPERIENCIA === */
+.main-column h4 {
+  color: #005A9C; /* Este es un azul corporativo elegante */
+}
+/* ======================================================= */
+
+.sidebar-column {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+}
+img.profile-pic {
+  border-radius: 25%; /* Foto de perfil circular */
+  max-width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid #dee2e6;
+}
+</style>
+
+<!-- =============================================================== -->
+<!-- ENVOLVEMOS TODO DENTRO DE NUESTRO NUEVO CONTENEDOR              -->
+<!-- =============================================================== -->
+<div class="profile-container">
+
+:::: {.columns}
+
+::: {.column width="25%" .sidebar-column}
+
+<!-- ========= COLUMNA IZQUIERDA (SIDEBAR) ========= -->
+
+<!-- IMPORTANTE: Reemplaza con la ruta a tu foto -->
+<img src="foto_de_perfil.jpg" class="profile-pic" alt="Foto de Brayan Cubides">
+
+<center>
+# Brayan Cubides
+*Estudiante de Estadística*
+</center>
+
+---
+
+### Contacto
+<i class="bi bi-envelope"></i> [bcubides@unal.edu.co](mailto:bcubides@unal.edu.co)
+<br>
+<i class="bi bi-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/bcubides/)
+<br>
+<i class="bi bi-file-earmark-person"></i> [CV Digital](https://web.magneto365.com/pl/bcubides-9313224)
+<br>
+<i class="bi bi-github"></i> [GitHub](https://github.com/bcubides-est) 
+<br>
+<i class="bi bi-phone"></i> [Celular](tel:+573108688582)
+<br>
+<i class="bi bi-geo-alt"></i> Bogotá, D.C., Colombia
+
+---
+
+### Aptitudes Principales
+-   Estadística
+-   Análisis de Datos
+-   Modelado Predictivo
+-   Cálculo Actuarial
+-   Series de Tiempo
+-   Inteligencia Artificial
+
+---
+
+### Herramientas Técnicas
+-   **Lenguajes:** R, Python, SQL
+-   **Software:** RStudio, Power BI
+-   **Ofimática:** Excel Avanzado (Macros), PowerPoint
+-   **Otros:** LaTeX, Articulate Storyline
+
+---
+
+### Idiomas
+-   **Español:** Nativo
+-   **Inglés:** Intermedio
+
+---
+
+### Reconocimientos
+-   **Matrícula de Honor**  
+    Primer periodo de 2025
+-   **Matrícula de Honor**  
+    Segundo periodo de 2023
+
+:::
+
+::: {.column width="75%" .main-column style="padding-left: 30px;"}
+
+
+<!-- ========================================================== -->
+<!-- ESTE TÍTULO SOLO APARECERÁ EN EL PDF GRACIAS AL CÓDIGO CSS -->
+<!-- ========================================================== -->
+<div class="print-only" style="text-align: center; margin-bottom: 30px;">
+  <h1 style="margin-bottom: 5px;">Brayan Stick Cubides Sarmiento</h1>
+  <p style="font-size: 1.2rem; margin-top: 0;">Curriculum</p>
+</div>
+
+<!-- ========= COLUMNA DERECHA (PRINCIPAL) ========= -->
+
+# Extracto Profesional
+
+Estudiante de **Estadística** en la **Universidad Nacional de Colombia**, enfocado en la aplicación de técnicas avanzadas y modelos analíticos para la toma de decisiones. Mi especialización se centra en **series de tiempo, cálculo actuarial, modelado predictivo e inteligencia artificial**, todo ello aplicado al análisis de datos para los sectores económico y financiero. Me caracterizo por un enfoque riguroso, pensamiento crítico y una actitud proactiva frente a nuevos retos y al aprendizaje continuo. Busco oportunidades para diseñar soluciones basadas en datos que mejoren la gestión del riesgo y la toma de decisiones estratégicas.
+
+---
+
+# Experiencia Profesional
+
+#### Tutor de Estadística - Grupos de Estudio Autónomo (GEA)
+*Universidad Nacional de Colombia* | **Agosto 2025 - Actualidad**
+
+-   Brindo acompañamiento académico y apoyo en la resolución de problemas complejos en asignaturas de estadística.
+-   Promuevo activamente el desarrollo del pensamiento analítico y la aplicación práctica de herramientas estadísticas.
+
+#### Monitor Académico de Estadística y Estudiante Auxiliar
+*Universidad Nacional de Colombia* | **Enero 2025 - Julio 2025**
+
+-   Realicé tutorías y apoyo docente, reforzando contenidos, resolviendo ejercicios y creando guías y ejemplos prácticos.
+-   Lideré el desarrollo de un curso virtualizado sobre **Macros en Excel Avanzado**, con contenido audiovisual interactivo creado en Articulate.
+-   Coordiné con el equipo docente en la logística de evaluaciones y procesos de retroalimentación.
+
+#### Monitor de Modelos Estadísticos | en alianza con la Universidad Nacional
+*Dirección Nacional de Inteligencia (DNI)* | **Noviembre 2024 - Diciembre 2024**
+
+-   Diseñé e impartí talleres prácticos sobre Modelos Estadísticos para funcionarios del DNI en el marco de un programa de formación técnica.
+-   Elaboré material de refuerzo y solucionarios detallados para facilitar el aprendizaje autónomo.
+
+#### Monitor de Probabilidad y Estadística Fundamental | en alianza con la Universidad Nacional
+*Dirección Nacional de Inteligencia (DNI)* | **Abril 2024 - Julio 2024**
+
+-   Dicté talleres y clases prácticas sobre conceptos fundamentales de probabilidad y estadística adaptados al público objetivo.
+-   Preparé material didáctico, ejercicios prácticos, y ofrecí seguimiento para asegurar la comprensión de los fundamentos.
+
+#### Asistente Contable (Prácticas)
+*QuimiOrganic S.A.S.* | **Julio 2018 - Diciembre 2018**
+
+-   Apoyé en procesos contables y administrativos: registro y conciliación de operaciones, control de pagos y manejo de hojas de cálculo.
+
+---
+
+# Educación
+
+#### Universidad Nacional de Colombia
+**Pregrado en Estadística** | *Enero 2021 - Julio 2026 (Estimado)*
+
+#### Servicio Nacional de Aprendizaje (SENA)
+**Técnico en Contabilización de Operaciones Comerciales y Financieras** | *Abril 2018 - Abril 2019*
+
+#### Institución Educativa Departamental Antonio Nariño
+**Bachillerato y Técnico en Desarrollo de Software** | *Diciembre 2017*
+
+:::
+
+::::
