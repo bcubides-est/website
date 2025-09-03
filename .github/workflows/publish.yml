@@ -2,7 +2,7 @@ name: Publish Website
 
 on:
   push:
-    branches: [website]          # rama donde está tu código fuente
+    branches: [main]          # rama donde está tu código fuente
 
 permissions:
   contents: write                # para crear/actualizar gh-pages
