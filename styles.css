@@ -1,63 +1,93 @@
-/* styles.css – estilos extra para index.qmd */
+/* ============================================== */
+/* === ESTILOS GENERALES PARA LA VISTA WEB ==== */
+/* ============================================== */
 
-/* --- Hero reducido --- */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 2rem 1rem;
-  background: transparent;
+/* Estos son los estilos que ya tenías para la web, no cambian */
+.profile-container {
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+}
+.main-column h2 {
+    border-bottom: 2px solid #0077B5;
+    padding-bottom: 5px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.main-column h4 {
+    color: #005A9C;
 }
 
-.hero-content {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+/* ================================================ */
+/* === ESTILOS PARA LA IMPRESIÓN (GENERAR PDF) ==== */
+/* ================================================ */
+
+/* Definimos los márgenes de la página del PDF */
+@page {
+  /* ¡Puedes ajustar estos valores a tu gusto! */
+  margin: 1.5cm;
 }
 
-.hero-logo {
-  width: 60px;
-  height: auto;
-  border-radius: 6px;
+/* Reglas que se aplican Únicamente al imprimir */
+@media print {
+
+  /* 1. Ocultar elementos no deseados en el PDF */
+  .navbar,                     /* Oculta la barra de navegación */
+  .page-footer,                /* Oculta el pie de página (si hubiera) */
+  .quarto-title-block {        /* ¡IMPORTANTE! Oculta el título "Perfil Profesional" que causaba la página en blanco */
+    display: none !important;
+  }
+  
+  /* 2. El cuerpo del PDF no debe tener márgenes ni padding propios */
+  body {
+    background-color: white !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* 3. Asegurar que el contenedor principal ocupe todo el espacio disponible dentro de los márgenes de @page */
+  .profile-container {
+    max-width: 130% !important;
+    width: 130% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
+  /* 4. Mostrar el nuevo título que crearemos, que está oculto por defecto */
+  .print-only {
+      display: block !important;
+  }
+
+  /* 5. Estilos de texto para asegurar buena legibilidad y quitar colores en el PDF */
+  a {
+    color: black !important;
+    text-decoration: none !important;
+  }
+   h1, h2, h3, h4, p, li {
+    color: #000 !important;
+  }
+   .main-column h2 {
+     border-bottom: none !important;
+     padding-bottom: 0;
+     margin-top: 20px;
+     margin-bottom: 10px;
+   }
+   
+  /* 6. Evitar que el contenido se corte de forma extraña entre páginas */
+  h2, h3, h4 {
+    page-break-after: avoid;
+  }
+  div, ul, li, p {
+    page-break-inside: avoid;
+  }
 }
 
-.hero h1 {
-  font-size: 1.75rem;
-  font-weight: 600;
-  margin: 0;
-}
+/* === CLASE ESPECIAL PARA ELEMENTOS DE SÓLO IMPRESIÓN === */
 
-.hero h2 {
-  font-size: 1rem;
-  font-weight: 400;
-  color: #6c757d;
-  margin: 0;
-}
-
-/* --- Lista limpia --- */
-h2 {
-  font-size: 1.25rem;
-  font-weight: 500;
-  margin-top: 2rem;
-}
-
-ol {
-  padding-left: 1.25rem;
-}
-
-li {
-  margin: .25rem 0;
-}
-
-/* --- Footer --- */
-.footer {
-  text-align: left;
-  margin: 2rem 0 1rem;
-  font-size: .9rem;
-  color: #6c757d;
-}
-
-.footer a {
-  color: #0d6efd;
-  margin-right: .5rem;
+/* Ocultar en la vista web normal el título que solo queremos en el PDF */
+.print-only {
+    display: none;
 }
