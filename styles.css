@@ -92,49 +92,38 @@
     display: none;
 }
 
-/* ======================================================= */
-/* ===    ESTILOS PARA PANELES DE CURSO (MINIMALISTA)    === */
-/* ======================================================= */
-.course-panel-link {
-  text-decoration: none;
+/* ============================================================ */
+/* ===   ESTILOS ESPECÍFICOS PARA INICIO (inicio.qmd)  === */
+/* ============================================================ */
+.hero-section {
+  padding: 40px 20px;
+  border-bottom: 1px solid var(--bs-border-color);
+  margin-bottom: 30px;
+  background-color: var(--bs-tertiary-bg);
+  border-radius: 10px;
 }
-
-.course-panel {
-  min-height: 150px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  transition: all 0.2s ease-in-out;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+.hero-section h1 {
+  font-size: 2.5rem; margin-top: 20px; color: var(--bs-primary);
 }
-
-.course-panel:hover {
-  transform: scale(1.03);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+.course-card-link { text-decoration: none; }
+.course-card .card-body {
+  display: flex; flex-direction: column; justify-content: center;
+  align-items: center; padding: 2rem 1rem;
 }
-
-.course-panel h4 {
-  margin: 0;
-  font-weight: 700;
-  text-align: center;
+.course-card {
+  transition: all 0.2s ease-in-out; border: 1px solid var(--bs-border-color-translucent);
 }
-
-/* Colores para cada panel */
-.panel-regresion { background-color: #e3f2fd; color: #0d47a1; }
-.panel-actuarial { background-color: #e8f5e9; color: #1b5e20; }
-.panel-series { background-color: #fff3e0; color: #e65100; }
-
-.panel-regresion:hover { background-color: #bbdefb; }
-.panel-actuarial:hover { background-color: #c8e6c9; }
-.panel-series:hover { background-color: #ffe0b2; }
-
-/* Colores para modo oscuro */
-html[data-bs-theme="dark"] .panel-regresion { background-color: #1e3a5f; color: #bbdefb; }
-html[data--bs-theme="dark"] .panel-actuarial { background-color: #214123; color: #c8e6c9; }
-html[data-bs-theme="dark"] .panel-series { background-color: #4d2b00; color: #ffe0b2; }
-
-html[data-bs-theme="dark"] .panel-regresion:hover { background-color: #2a5288; }
-html[data-bs-theme="dark"] .panel-actuarial:hover { background-color: #306034; }
-html[data-bs-theme="dark"] .panel-series:hover { background-color: #804500; }
+.course-card:hover {
+  transform: translateY(-5px); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-color: var(--bs-primary);
+}
+html[data-bs-theme="dark"] .course-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+.card-icon { font-size: 3.5rem; color: var(--bs-primary); margin-bottom: 1rem; }
+.course-card .card-title { color: var(--bs-heading-color); font-weight: 700; margin-top: 0.5rem; }
+.footer {
+  text-align: center; margin-top: 40px; padding-top: 20px;
+  border-top: 1px solid var(--bs-border-color); font-size: 0.9em;
+  color: var(--bs-secondary-color);
+}

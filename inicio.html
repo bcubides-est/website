@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Portal de Cursos y Proyectos – Brayan Cubides</title>
+<title>Brayan Cubides | Portal de Cursos – Brayan Cubides</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -219,8 +219,10 @@ ul.task-list li input[type="checkbox"] {
         changeGiscusTheme();
       }
     };
-    const authorPrefersDark = true;
+    const authorPrefersDark = false;
     const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
     let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
     // Dark / light mode switch
     window.quartoToggleColorScheme = () => {
@@ -288,7 +290,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Portal de Cursos y Proyectos</h1>
+<h1 class="title">Brayan Cubides | Portal de Cursos</h1>
 </div>
 
 
@@ -307,38 +309,54 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="hero-section text-center">
 <p><img src="./logo.png" class="img-fluid" width="180"></p>
-<p>Bienvenido a mi espacio académico. Aquí encontrarás los recursos de mis cursos de pregrado.</p>
+<section id="portal-de-cursos-y-proyectos" class="level1">
+<h1>Portal de Cursos y Proyectos</h1>
+<p>Bienvenido a mi espacio académico. Aquí encontrarás los recursos y materiales de mis cursos de pregrado en Estadística.</p>
+</section>
 </div>
 <p><br></p>
 <section id="cursos-de-pregrado" class="level2">
 <h2 class="anchored" data-anchor-id="cursos-de-pregrado">📚 Cursos de Pregrado</h2>
 <div class="grid">
 <div class="g-col-12 g-col-md-4">
-<a href="https://bcubides-est.github.io/Regresion/" class="course-panel-link">
-<div class="course-panel panel-regresion">
-<h4 class="anchored">
-Modelos de Regresión
-</h4>
+<div class="card course-card h-100">
+<div class="card-body">
+<div class="card-icon">
+<i class="fa-solid fa-chart-line" role="img" aria-label="Chart line icon"></i>
 </div>
-</a><p><a href="https://bcubides-est.github.io/Regresion/" class="course-panel-link"></a></p>
+<h5 class="card-title anchored">
+Regresión
+</h5>
+<!-- Este enlace hace que toda la tarjeta sea clicleable -->
+<p><a href="https://bcubides-est.github.io/Regresion/" class="stretched-link"></a></p>
 </div>
-<div class="g-col-12 g-col-md-4">
-<a href="https://bcubides-est.github.io/Actuarial/" class="course-panel-link">
-<div class="course-panel panel-actuarial">
-<h4 class="anchored">
-Métodos Actuariales
-</h4>
 </div>
-</a><p><a href="https://bcubides-est.github.io/Actuarial/" class="course-panel-link"></a></p>
 </div>
 <div class="g-col-12 g-col-md-4">
-<a href="https://bcubides-est.github.io/Series_de_tiempo/" class="course-panel-link">
-<div class="course-panel panel-series">
-<h4 class="anchored">
+<div class="card course-card h-100">
+<div class="card-body">
+<div class="card-icon">
+<i class="fa-solid fa-shield-halved" role="img" aria-label="Shield icon"></i>
+</div>
+<h5 class="card-title anchored">
+Cálculo Actuarial
+</h5>
+<p><a href="https://bcubides-est.github.io/Actuarial/" class="stretched-link"></a></p>
+</div>
+</div>
+</div>
+<div class="g-col-12 g-col-md-4">
+<div class="card course-card h-100">
+<div class="card-body">
+<div class="card-icon">
+<i class="fa-solid fa-wave-square" role="img" aria-label="Wave square icon"></i>
+</div>
+<h5 class="card-title anchored">
 Series de Tiempo
-</h4>
+</h5>
+<p><a href="https://bcubides-est.github.io/Series_de_tiempo/" class="stretched-link"></a></p>
 </div>
-</a><p><a href="https://bcubides-est.github.io/Series_de_tiempo/" class="course-panel-link"></a></p>
+</div>
 </div>
 </div>
 <br>
